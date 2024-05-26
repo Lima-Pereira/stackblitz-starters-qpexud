@@ -1,0 +1,10 @@
+<div class="overflow-x-hidden px-2 col-12 col-lg-8 mx-auto">
+  <h1 class="text-center mb-5">CEP</h1>
+  <button class="btn btn-outline-danger w-100 mb-3" (click)="mostrarSobre()">
+    {{ sobreVisivel ? 'Esconder' : 'Mostrar' }} Sobre
+  </button>
+  <app-sobre *ngIf="sobreVisivel" />
+  <app-cep />
+
+  <hr class="w-50 mx-auto" />
+</div>
